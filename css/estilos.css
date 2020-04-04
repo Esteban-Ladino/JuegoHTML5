@@ -1,0 +1,99 @@
+@font-face {
+    font-family: '8bits';
+    src: url('../fonts/8bits.TTF');
+}
+
+/**
+* The font file called PixelMix in this archive was created 
+* by Andrew Tyler www.AndrewTyler.net and font@andrewtyler.net 
+* License: http://creativecommons.org/licenses/by-nc-nd/3.0/us/
+*/
+@font-face {
+    font-family: 'pixelmix';
+    src: url('../fonts/pixelmix.ttf');
+}
+
+body {
+    background-image: url(../images/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: '8bits';
+    font-weight: 100;
+    font-size: 85px;
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    color: black;
+    text-shadow: 1px 2px 8px #141414e3;
+}
+
+p {
+    font-family: 'pixelmix';
+    text-align: center;
+    font-size: 17px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.casilla {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    width: 25%;
+    border-radius: 10px;
+    background: #19191a69;
+    box-shadow: 1px 2px 8px #141414cb;
+}
+
+.casilla figure {
+    margin: 5px;
+    min-width: 100px;
+}
+
+.imagen {
+    height: 100px;
+}
+
+.imagen:hover {
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'pixelmix';
+    font-size: 20px;
+    text-align: center;
+    background: #7dc800;
+    padding: .6em .8em .8em;
+    margin: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 -.2em rgba(0,0,0, .2);
+    outline: 0;
+}
+
+.footer {
+    background: #ffffffa1;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .casilla {
+        grid-template-columns: repeat(auto-fill, 100px);
+    }
+}
